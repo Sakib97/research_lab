@@ -1,19 +1,20 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "ECE Research Lab",
+  "name": "ECE Research Lab - Ahsanullah University of Science and Technology",
+  "description": "A platform to showcase the research activities and projects of the ECE department at Ahsanullah University of Science and Technology.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "brand.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "brand.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "brand.png",
       "type": "image/png",
       "sizes": "512x512"
     }
