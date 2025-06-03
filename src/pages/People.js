@@ -1,5 +1,10 @@
 import styles from '../css/People.module.css';
 import propic from '../assets/propic2.png';
+import drsharif from '../assets/drsharif.jpeg';
+import alamin from '../assets/dralamin.jpeg';
+import mahfuz from '../assets/mahfuz.jpeg';
+import reasad from '../assets/reasad.png';
+import seum from '../assets/seum.png';
 const People = () => {
     return (
         <div style={{
@@ -19,14 +24,14 @@ const People = () => {
                 <div className={styles.memberSection} >
                     
                     <div className={styles.peopleContainer} >
-                        <img src={propic} alt="freepic"
+                        <img src={drsharif} alt="freepic"
                             className={styles.profilePic} />
                         <span style={{ fontWeight: 'bold' }}>Dr. Fakir Sharif Hossain</span>
                         <span className={styles.designation}>Associate Professor, Department of EEE, AUST, Bangladesh</span>
                     </div>
 
                     <div className={styles.peopleContainer}>
-                        <img src={propic} alt="Faculty Member" 
+                        <img src={alamin} alt="Faculty Member" 
                         className={styles.profilePic} />
                         <span style={{ fontWeight: 'bold' }}>Dr. Rashed Al Amin</span>
                         <span className={styles.designation}>Associate Researcher & Lecturer, 
@@ -35,7 +40,7 @@ const People = () => {
                     </div>
 
                     <div className={styles.peopleContainer}>
-                        <img src={propic} alt="Faculty Member" 
+                        <img src={reasad} alt="Faculty Member" 
                         className={styles.profilePic} />
                         <span style={{ fontWeight: 'bold' }}>Reasad Zaman</span>
                         <span className={styles.designation}>
@@ -43,7 +48,7 @@ const People = () => {
                     </div>
 
                     <div className={styles.peopleContainer}>
-                        <img src={propic} alt="Faculty Member" 
+                        <img src={seum} alt="Faculty Member" 
                         className={styles.profilePic} />
                         <span style={{ fontWeight: 'bold' }}>Ashek Seum</span>
                         <span className={styles.designation}>
@@ -59,9 +64,16 @@ const People = () => {
                 <div className={styles.memberSection} >
                     
                     <div className={styles.peopleContainer} >
-                        <img src={propic} alt="Student Member"
+                        <img src={mahfuz} alt="Student Member"
                             className={styles.profilePic} />
                         <span style={{ fontWeight: 'bold' }}>Mahfuzur Rahman</span>
+                        <span className={styles.designation}>Department of EEE, AUST, Bangladesh</span>
+                    </div>
+
+                    <div className={styles.peopleContainer} >
+                        <img src={propic} alt="Student Member"
+                            className={styles.profilePic} />
+                        <span style={{ fontWeight: 'bold' }}>Arafat Miah</span>
                         <span className={styles.designation}>Department of EEE, AUST, Bangladesh</span>
                     </div>
                     
