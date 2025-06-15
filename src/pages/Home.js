@@ -4,6 +4,7 @@ import styles from '../css/Home.module.css'
 import { useEffect } from 'react';
 import ev from '../assets/ev1.jpg';
 import zdd from '../assets/zdd1.jpg';
+import Footer from '../components/Footer';
 
 const Home = () => {
     const location = useLocation();
@@ -59,8 +60,8 @@ const Home = () => {
                         </div>
 
                         <div>
-                            <img className={styles.projectImage} 
-                            src={ev} alt="Project 1" />
+                            <img className={styles.projectImage}
+                                src={ev} alt="Project 1" />
                         </div>
                     </div>
 
@@ -70,11 +71,13 @@ const Home = () => {
                         </span>
 
                         <div className={styles.projectPaper}>
-                            <span style={{ fontWeight: 'bold', }}>
-                                Traffic Light Detection for Autonomous Vehicles in
-                                Diverse Environments Through Transfer Learning</span>
+                            <a href="https://ieeexplore.ieee.org/document/11022006" target="_blank" rel="noopener noreferrer">
+                                <span style={{ fontWeight: "bold", color: 'black', fontSize: '18px' }}>
+                                    Traffic Light Detection for Autonomous Vehicles in
+                                    Diverse Environments Through Transfer Learning</span>
+                            </a>
                             <br />
-                            
+
                             <span style={{ fontSize: '13px', color: 'grey' }} >December 2024</span>
                             <br />
                             <span style={{ fontSize: '13px', color: 'grey' }}>
@@ -114,8 +117,8 @@ const Home = () => {
                         </div>
 
                         <div>
-                            <img className={styles.projectImage} 
-                            src={zdd} alt="Project 2" />
+                            <img className={styles.projectImage}
+                                src={zdd} alt="Project 2" />
                         </div>
                     </div>
 
@@ -163,6 +166,8 @@ const Home = () => {
                 </div>
                 <hr />
             </div>
+
+            {/* <Footer></Footer> */}
         </div>
     );
 }

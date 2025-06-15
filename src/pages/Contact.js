@@ -1,6 +1,7 @@
 const Contact = () => {
     return (
-        <div className="container" style={{ marginTop: '40px', marginBottom: '50px' }}>
+        <div className="container" 
+        style={{ marginTop: '40px', marginBottom: '50px', height: '100vh' }}>
             <h2>Contact Us</h2>
             <p>We'd love to hear from you. Whether you have a question, want to collaborate, or are
                 interested in our research, feel free to reach out to us using the contact information
