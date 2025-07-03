@@ -78,6 +78,8 @@ const NavigationBar = () => {
 
                                 <Nav.Link as={Link} to="/contact"
                                     onClick={handleClose}>Contact</Nav.Link>
+                                
+                                
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>

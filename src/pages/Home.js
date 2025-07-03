@@ -8,15 +8,20 @@ import Footer from '../components/Footer';
 
 const Home = () => {
     const location = useLocation();
+    // console log location
+    
 
     useEffect(() => {
         if (location.hash) {
             const element = document.querySelector(location.hash);
             if (element) {
                 element.scrollIntoView({ behavior: "smooth" });
+            } else {
+                console.warn(`Element with id '${location.hash}' not found on the page.`);
             }
         }
     }, [location]);
+    
 
     return (
         <div style={{

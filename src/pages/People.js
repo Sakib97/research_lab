@@ -5,6 +5,7 @@ import alamin from '../assets/dralamin.jpeg';
 import mahfuz from '../assets/mahfuz.jpeg';
 import reasad from '../assets/reasad.png';
 import seum from '../assets/seum.png';
+import arafat from '../assets/arafat.jpeg';
 const People = () => {
     return (
         <div style={{
@@ -71,7 +72,7 @@ const People = () => {
                     </div>
 
                     <div className={styles.peopleContainer} >
-                        <img src={propic} alt="Student Member"
+                        <img src={arafat} alt="Student Member"
                             className={styles.profilePic} />
                         <span style={{ fontWeight: 'bold' }}>Arafat Miah</span>
                         <span className={styles.designation}>Department of EEE, AUST, Bangladesh</span>
