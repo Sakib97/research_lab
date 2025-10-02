@@ -5,11 +5,12 @@ import { useEffect } from 'react';
 import ev from '../assets/ev1.jpg';
 import zdd from '../assets/zdd1.jpg';
 import Footer from '../components/Footer';
+import Accordion from 'react-bootstrap/Accordion';
 
 const Home = () => {
     const location = useLocation();
     // console log location
-    
+
 
     useEffect(() => {
         if (location.hash) {
@@ -21,7 +22,7 @@ const Home = () => {
             }
         }
     }, [location]);
-    
+
 
     return (
         <div style={{
@@ -70,10 +71,72 @@ const Home = () => {
                         </div>
                     </div>
 
+                    <div style={{ marginTop: '20px', marginBottom: '20px' }}>
+                        <div style={{ fontWeight: "bold", fontSize: "17px", marginBottom: '10px' }}>
+                            Recent Activities
+                        </div>
+
+
+                        <Accordion style={{ boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)' }} defaultActiveKey="0">
+                            <Accordion.Item eventKey="0">
+                                <Accordion.Header>Prototype Build</Accordion.Header>
+                                <Accordion.Body>
+                                    The Prototype shows the PID (Proportional–Integral–Derivative) control algorithm applied in robotics.
+                                    The controller continuously computes the error between a desired setpoint and the measured distance,
+                                    then adjusts motor speed using proportional, integral, and derivative terms for stable and precise control.
+                                    <div className={styles.youtubeVideo}>
+                                        <iframe width="660" height="315" src="https://www.youtube.com/embed/zuVD8OO7NPI?si=nd3LijhmojS_VCkr"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            {/* <Accordion.Item eventKey="1">
+                                <Accordion.Header>Activity #2</Accordion.Header>
+                                <Accordion.Body>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum.
+                                    <div className={styles.youtubeVideo}>
+                                        <iframe className={styles.youTubeIframe} src="https://www.youtube.com/embed/xa6M7n_swNw?si=y_b3Otdk1Mt_9ZV8" title="YouTube video player"
+                                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+
+                                </Accordion.Body>
+                            </Accordion.Item> */}
+                        </Accordion>
+
+                    </div>
+                    <br />
+
                     <div className={styles.projectPaperContainer}>
                         <span style={{ fontWeight: "bold", fontSize: "17px" }}>
                             Associated Research Papers
                         </span>
+
+                        <div className={styles.projectPaper}>
+                            <a href="https://www.mdpi.com/2624-6120/6/4/53" target="_blank" rel="noopener noreferrer">
+                                <span style={{ fontWeight: "bold", color: 'black', fontSize: '18px' }}>
+                                    Towards Next-Generation FPGA-Accelerated Vision-Based Autonomous Driving: A Comprehensive Review
+                                </span>
+                            </a>
+                            <br />
+                            <span style={{ fontSize: '13px', color: 'grey' }} >1 October 2025</span>
+                            <br />
+                            <a href="https://www.mdpi.com/journal/signals" target="_blank">
+                                <span style={{ fontSize: '13px', color: 'grey' }}>
+                                    Signals: Journal on signals and signal processing published quarterly online by MDPI.
+                                </span>
+
+                            </a>
+                        </div>
 
                         <div className={styles.projectPaper}>
                             <a href="https://ieeexplore.ieee.org/document/11022006" target="_blank" rel="noopener noreferrer">

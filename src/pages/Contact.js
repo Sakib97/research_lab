@@ -47,9 +47,11 @@ const Contact = () => {
                 </div>
                 <button type="submit" className="btn btn-primary">Send Message</button>
             </form> */}
+            
         </div>
 
     );
 }
 
 export default Contact;
+
